@@ -1,5 +1,4 @@
 import sys
-
 sys.stdin = open('1221.txt')
 
 numsDict = {'ZRO': 0, 'ONE': 1, 'TWO': 2,
