@@ -1,11 +1,17 @@
 import sys
+
 sys.stdin = open('13753.txt')
 
 T = int(input())
-for t in range(1, T+1):
+for t in range(1, T + 1):
     pattern = input()
     compareStr = input()
 
-    patterDict = {}
-    for p in pattern:
-        patterDict.update({p: 0})
+    print(f'pattern:{pattern}, compareStr:{compareStr}')
+
+    lenP = len(pattern)
+    patternDict = {}
+    for i, v in enumerate(pattern):
+        patternDict[v] = lenP - 1 - i
+    print(patternDict)
+    
