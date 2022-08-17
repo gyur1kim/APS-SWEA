@@ -33,6 +33,9 @@ class Stack:
     def isFull(self):
         return self.top+1 == self.size
 
+    def peek(self):
+        return self.data[self.top]
+
 
 size = 10
 stack = Stack(3)
