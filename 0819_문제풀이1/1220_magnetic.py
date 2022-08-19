@@ -18,8 +18,6 @@ for tc in range(1, 11):
             filteredLst.pop()
 
         for i in range(len(filteredLst)-1):
-            if filteredLst[i] == 2 and filteredLst[i+1] == 1:
+            if filteredLst[i] == 1 and filteredLst[i+1] == 2:
                 cnt += 1
-        cnt += 1
-
     print(f'#{tc} {cnt}')
