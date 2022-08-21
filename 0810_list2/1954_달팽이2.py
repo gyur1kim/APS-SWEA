@@ -26,6 +26,6 @@ for t in range(1, T+1):
             i -= 1
             arr[i][j] = n
             n += 1
-    print(f'# {t}')
+    print(f'#{t}')
     for a in arr:
         print(*a)
